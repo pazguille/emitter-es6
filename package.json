@@ -1,0 +1,27 @@
+{
+  "name": "emitter-es6",
+  "version": "0.0.1",
+  "description": "A JavaScript Emitter written in ES6.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pazguille/es6.git"
+  },
+  "keywords": [
+    "es6",
+    "emitter"
+  ],
+  "author": "Guille Paz <guille87paz@gmail.com> (http://pazguille.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pazguille/emitter-es6/issues"
+  },
+  "homepage": "https://github.com/pazguille/emitter-es6",
+  "devDependencies": {
+    "6to5ify": "^2.0.0",
+    "browserify": "^7.0.3",
+    "mkdirp": "^0.5.0"
+  }
+}
+
