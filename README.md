@@ -82,9 +82,9 @@ Execute each of the `listeners` collection in order with the given parameters.
 emitter.emit('live', 'data1', 'data2');
 ```
 
-## Build
+## Build to ES5
 
-  npm run build
+    npm run build
 
 
 ## Made with ❤
