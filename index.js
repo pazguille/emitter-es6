@@ -1,11 +1,6 @@
 'use strict';
 
 /**
- * Exports Emitter
- */
-export default Emitter;
-
-/**
  * Creates a new instance of Emitter.
  * @class
  * @returns {Object} emitter - An instance of Emitter.
@@ -152,3 +147,8 @@ class Emitter {
   }
 
 }
+
+/**
+ * Exports Emitter
+ */
+export default Emitter;
