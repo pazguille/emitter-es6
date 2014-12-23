@@ -4,7 +4,8 @@
   "description": "A JavaScript Emitter written in ES6.",
   "main": "index.js",
   "scripts": {
-    "build": "node builder.js",
+    "6to5": "node 6to5.js",
+    "build": "node browserify.js",
     "test": "npm run build && node_modules/.bin/_mocha"
   },
   "repository": {
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/pazguille/emitter-es6",
   "devDependencies": {
+    "6to5": "^1.15.0",
     "6to5ify": "^2.0.0",
     "better-assert": "^1.0.2",
     "browserify": "^7.0.3",
