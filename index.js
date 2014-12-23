@@ -11,7 +11,7 @@ class Emitter {
 
   constructor() {
     this._events = {};
-  }
+  };
 
   /**
    * Adds a listener to the collection for a specified event.
@@ -28,7 +28,7 @@ class Emitter {
     this._events[event] = this._events[event] || [];
     this._events[event].push(listener);
     return this;
-  }
+  };
 
   /**
    * Adds a one time listener to the collection for a specified event. It will execute only once.
@@ -54,7 +54,7 @@ class Emitter {
     this.on(event, fn);
 
     return this;
-  }
+  };
 
   /**
    * Removes a listener from the collection for a specified event.
@@ -84,7 +84,7 @@ class Emitter {
     }
 
     return this;
-  }
+  };
 
   /**
    * Removes all listeners from the collection for a specified event.
@@ -102,7 +102,7 @@ class Emitter {
     } catch(e) {};
 
     return this;
-  }
+  };
 
   /**
    * Returns all listeners from the collection for a specified event.
@@ -118,7 +118,7 @@ class Emitter {
     try {
       return this._events[event];
     } catch(e) {};
-  }
+  };
 
   /**
    * Execute each item in the listener collection in order with the specified data.
@@ -144,7 +144,7 @@ class Emitter {
     }
 
     return this;
-  }
+  };
 
 }
 
