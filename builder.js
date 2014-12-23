@@ -7,7 +7,7 @@ var to5ify = require('6to5ify');
 
 mkdirp.sync('./dist');
 
-browserify({'debug': true, 'standalone': 'es6'})
+browserify({'debug': true, 'standalone': 'Emitter'})
   .transform(to5ify)
   .require('./index.js', {'entry': true})
   .bundle()
