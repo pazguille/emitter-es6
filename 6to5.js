@@ -2,14 +2,13 @@
 
 var fs = require('fs');
 var mkdirp = require('mkdirp');
-var browserify = require('browserify');
-var to5ify = require('6to5ify');
+var to5 = require('6to5');
 
 mkdirp.sync('./dist');
 
-browserify({'debug': true, 'standalone': 'Emitter'})
-  .transform(to5ify)
-  .require('./index.js', {'entry': true})
-  .bundle()
-  .on('error', function (err) { console.log('Error : ' + err.message); })
-  .pipe(fs.createWriteStream('dist/build.js'));
+to5.transformFile('index.js', {
+  'modules': ['commonInterop']
+}, function (err, result) {
+  if (err) { console.log('Error : ' + err.message); }
+  fs.writeFileSync('./dist/build.js', result.code);
+});
