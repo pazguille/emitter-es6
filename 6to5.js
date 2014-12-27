@@ -1,10 +1,11 @@
 'use strict';
 
 var fs = require('fs');
-var mkdirp = require('mkdirp');
 var to5 = require('6to5');
 
-mkdirp.sync('./dist');
+if (!fs.existsSync('./dist')) {
+  fs.mkdirSync('./dist');
+}
 
 to5.transformFile('index.js', {
   'modules': ['commonInterop']

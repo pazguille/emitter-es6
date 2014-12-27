@@ -1,11 +1,12 @@
 'use strict';
 
 var fs = require('fs');
-var mkdirp = require('mkdirp');
 var browserify = require('browserify');
 var to5ify = require('6to5ify');
 
-mkdirp.sync('./dist');
+if (!fs.existsSync('./dist')) {
+  fs.mkdirSync('./dist');
+}
 
 browserify({'debug': true, 'standalone': 'Emitter'})
   .transform(to5ify.configure({
