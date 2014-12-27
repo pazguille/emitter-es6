@@ -84,8 +84,15 @@ emitter.emit('live', 'data1', 'data2');
 
 ## Build to ES5
 
+    npm run 6to5
+
+## Build to Browserify
+
     npm run build
 
+## Tests
+
+    npm test
 
 ## Made with ❤
 - Guille Paz (Front-end developer | Web standards lover)
