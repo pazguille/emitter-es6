@@ -101,4 +101,4 @@ emitter.emit('live', 'data1', 'data2');
 - Web: [http://pazguille.me](http://pazguille.me)
 
 ## License
-MIT license. Copyright © 2014.
+MIT license. Copyright © 2015.
