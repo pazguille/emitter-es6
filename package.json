@@ -23,10 +23,10 @@
   },
   "homepage": "https://github.com/pazguille/emitter-es6",
   "devDependencies": {
-    "6to5": "^1.15.0",
-    "6to5ify": "^2.0.0",
+    "6to5": "^3.6.5",
+    "6to5ify": "^4.1.1",
     "better-assert": "^1.0.2",
-    "browserify": "^7.0.3",
-    "mocha": "^2.1.0"
+    "browserify": "^13.1.1",
+    "mocha": "^3.2.0"
   }
 }
